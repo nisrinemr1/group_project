@@ -1,0 +1,42 @@
+.ground {
+  background-color: var(--brown);
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.success-grid-c {
+  display: grid;
+  grid-template-columns: 25% 35% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  /* items (ie, grid cells) centered in the middle */
+  margin-top: 5%;
+  align-items: center;
+  position: relative;
+  /* Position set because if not mentionned, z-index won't work, because .ground has a position (and positioned elements always come on top of non-
+  positioned elements */
+  z-index: 100;
+  /* z-index of high value to put this element on top of anything else */
+}
+
+#plantchi-success-img {
+  display: block;
+  height: 35%;
+}
+
+#grid-item-1 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+#grid-item-2 {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  text-align: center;
+  padding-bottom: 5em;
+}
+#grid-item-2>p {
+  font-size: 1.2em;
+}

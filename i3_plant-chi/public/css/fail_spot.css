@@ -1,0 +1,42 @@
+
+.fail-block{
+    background-color:var(--black);
+    height: 100%;
+    text-align: center;
+    color: var(--whitish);
+    width: 100%;
+    margin-top: -30px;
+    padding-bottom: 5%;
+    /* I had to do this like this the screen will be completely black. Or a band of the background color whitish will shows up... */
+  }
+  
+  .fail-title{
+    padding-top:5%;
+    padding-bottom: 5%;
+  }
+  
+  .plant-chi-dead-img{
+    width: 15%;
+    margin-bottom: 2%;
+    animation: bounce 1s infinite alternate;
+    /* Like this the image will never stop bouncing*/
+  }
+  
+  @keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-30px);
+    /* like this the image will bounce more higher */
+  }
+  }
+  @-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+    /* like this the image will bounce more lower */
+  }
+  }

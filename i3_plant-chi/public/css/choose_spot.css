@@ -1,0 +1,127 @@
+.plantchi-speaks-flex-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 1rem;
+  height: 40%;
+}
+#plantchi-spot-img {
+  width: 25vw;
+  display: inline-block;
+}
+
+.plantchi-text {
+  align-self: center;
+  padding-left: 2ch;
+}
+
+.spot-choice-c {
+  height: 90%;
+  margin: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
+
+#good-spot {
+ position: absolute;
+ bottom: 115px;
+ right: 25px;
+ box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#wrong-spot-1 {
+ position: absolute;
+ bottom: 265px;
+ right: 112px;
+ box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+ transform: rotate(28deg);
+}
+#wrong-spot-2 {
+ position: absolute;
+ bottom: 170px;
+ right: 229px;
+ box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.spot {
+  /* Spots are links -> remove default underlined text-decoration */
+  text-decoration: none;
+  width: 20px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: var(--yellow);
+  
+}
+.spot:hover,
+.spot:focus {
+  background: var(--pink);
+}
+
+@media screen and (max-width: 480px) {
+  /* To leave space enough for the entire img on Mobile devices */
+  main {
+    margin: 0px;
+  }
+  .body {
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+  }
+  .card {
+    padding: 0px;
+  }
+  /* Remove flex display to make img and p stack on top of one another */
+  .plantchi-speaks-flex-c {
+    display: block;
+  }
+  .img-plantchi-spot {
+    height: 60%;
+    /* Display block so that img can be centered with margin auto */
+    display: block;
+    margin: auto;
+  }
+  .plantchi-text {
+    text-align: center;
+  }
+  /* Display has been set to "block" to remove flex property -> hide them again */
+  /* TODO: add touchstart event for mobile */
+  #plantchi-img-unhappy,
+  #plantchi-img-happy {
+    display: none;
+  }
+
+  #good-spot {
+    bottom: 127px;
+    right: 20px;
+  }
+   #wrong-spot-1 {
+    bottom: 250px;
+    right: 90px;
+  }
+   #wrong-spot-2 {
+    bottom: 175px;
+    right: 188px;
+  }
+}

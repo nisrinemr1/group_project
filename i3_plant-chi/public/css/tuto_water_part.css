@@ -1,0 +1,99 @@
+.water-and-stars{
+    margin-top:1%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.gauge{
+    margin-left: 2%;
+    float: left;
+}
+
+.img-gauge{
+    width: 5%;
+    float: left;
+    margin-top: 1%;
+}
+
+.gauge-part-container{
+    display:grid;
+    grid-template-rows: 10% 10% ;
+}
+
+.img-check{
+    width:2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /* I had to do this to get a "perfect" emplacement even if it still not perfect... */
+}
+
+.img-dead-too-much-water-face, 
+.img-too-much-water-face, 
+.img-cute-face, 
+.img-need-water-face, 
+.img-dead-no-more-water-face{
+    width: 4%;
+}
+
+.img-too-much-water-face{
+    margin-top: 1%;
+}
+
+.img-cute-face{
+    margin-bottom: 0.5%;
+}
+
+/* ************ Stars part! ***************** */
+
+.stars-part{
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-gap:5%;
+    height: 10%;
+    margin-top: 10%;
+}
+
+.stars-part img {
+    width: 100%;
+}
+
+  /* ****** Plant and ground part ***** */
+  .plant-grid-tuto-water {
+    display: grid;
+    grid-template-columns: 20% 42% 30% 30%;
+    grid-template-rows: 15% 1% 25% 25%;
+    /* items (ie, grid cells) centered in the middle */
+    align-items: center;
+    position: relative;
+    /* Position set because if not mentionned, z-index won't work, because .ground has a position (and positioned elements always come on top of non-
+    positioned elements */
+    z-index: 100;
+    /* z-index of high value to put this element on top of anything else */
+   
+  }
+
+  .plant-chi-talk {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: larger;
+  }
+
+  .look-gauge{
+    width: 70;
+    font-size: x-large;  
+    margin-left: 15%;
+  }
+
+  .stars-part_yellow{
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10% 10%;
+    grid-gap:5%;
+    height: 10%;
+    margin-top: 10%;
+}
+
+.stars-part_yellow img {
+    width: 200%;
+}

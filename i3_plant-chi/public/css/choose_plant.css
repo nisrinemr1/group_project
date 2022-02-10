@@ -1,0 +1,72 @@
+.title-choose-plant{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.container-choose-plant{
+    display:grid;
+    grid-template-columns: 25% 25%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
+    /* space between the rows */
+    padding-top: 2%;
+    padding-left: 4%;
+    /* to be perfectly centred */
+    justify-content:space-around;
+    justify-content: center;
+}
+
+.img-choose-plant{
+    width: 40%;
+}
+
+.box-choose-plant{
+    text-align: center;
+    background-color: var(--pink);
+    width: 80%;
+    border: solid 0.5rem var(--lightgrey);
+    padding-bottom: 5%;
+}
+
+.box-choose-plant-no-img{
+    text-align: center;
+    background-color: var(--pink);
+    width: 80%;
+    border: solid 0.5rem var(--lightgrey);
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.p-dots{
+    margin-top: 20%;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.box-title{
+    font-size: x-large;
+}
+
+/* _______when the user choose the plant______  */
+
+.plant-choosen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.img-plant-chi-presentation{
+    width: 40%;
+    float: left;
+    padding-left: 10% ;
+}
+
+.plant-chi-presentation{
+    text-align: center;
+    float: left;
+    padding: 0%;
+    margin-top: 15%;
+    margin-left: 5%;
+    text-decoration: none;
+    color: var(--black);
+}

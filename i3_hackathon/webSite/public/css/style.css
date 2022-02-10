@@ -1,0 +1,435 @@
+@font-face {
+    font-family: "cherry";
+    src: url(../font/CherryBomb-Regular.ttf);
+}
+
+@font-face {
+    font-family: "caviar";
+    src: url(../font/CaviarDreams.ttf);
+}
+
+.title{
+    font-family: "cherry";
+}
+
+.text{
+    font-family: "caviar";
+    font-size:x-large;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    overflow: overlay;
+    /* to hide 2 scrollbar  */
+}
+
+
+#home{
+    background-image: linear-gradient(to bottom, #9ad2ff, #87b9e2);
+}
+
+#game{
+    background-image: linear-gradient(to bottom, #81b8e6, #97adfe);
+}
+
+#informations{
+    background-image: linear-gradient(to bottom, #97adfe, #b5a2ff);
+}
+
+#we{
+    background-image: linear-gradient(to bottom, #b5a2ff, #d992ff);
+    padding-top: 10%;
+}
+
+.containerBody{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+   /*  background-attachment: static;
+    background-repeat: no-repeat; */
+}
+
+nav{
+    top: 0;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    display:flex;
+    height:12%;
+    font-size: x-large;
+    background-color: rgba(88, 88, 88, 0.24);
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    position:absolute;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3.5%;
+}
+
+
+nav ul li a {
+    margin: 1% 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color  .3s ease, color .2s;
+}
+
+.logo{
+    font-size: 3rem; 
+    margin-top: -1.5%;
+}
+
+nav ul li a:hover{
+    border-bottom-color: #b5a2ff;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.container{
+    overflow: overlay;
+    width: 85%;
+    float:left;
+    padding-top:10%;
+}
+
+.container2{
+    overflow: overlay;
+    width: 85%;
+    float:left;
+    margin-bottom: 30%;
+}
+
+.container3{
+    overflow: overlay;
+    width: 85%;
+    float:left;
+    margin-top: -5%;
+    
+}
+
+.container img{
+    width: 20%;
+}
+
+.upLeft1 {
+    width: 50%;
+    padding-left: 30%;
+    padding-bottom: 5%; 
+}
+
+.upLeft2{
+    width: 50%;
+    padding-left: 30%;
+    padding-bottom: 5%; 
+}
+
+.upRight1{
+    width: 70%;
+}
+
+.upLeft2, .upLeft3{
+    width: 50%;
+    padding-left: 300%;
+    padding-bottom: 15%; 
+}
+
+.upRight2, .upRight3{
+    padding-left: 300%;
+}
+
+.upRight1, .upRight2{
+    width: 70%;
+}
+
+.secondLineOne3{
+    width: 200%;
+}
+
+.secondLineTwo3{
+    width: 200%;
+    margin-left: -30%;
+    padding-top: 5%;
+}
+
+.secondLineThree3{
+    width: 200%;
+    margin-left: -65%;
+    padding-top: 5%;
+}
+
+.secondLineFour3{
+    width: 200%;
+    margin-left: -100%;
+}
+
+.firstLineOne3{
+    padding-top: 10%;
+    width: 200%;
+}
+
+.firstLineTwo3{
+    margin-top: 10%;
+    width: 200%;
+    margin-left: -30%;
+    padding-top: 5%;
+}
+
+.firstLineThree3{
+    margin-top: 10%;
+    width: 200%;
+    margin-left: -65%;
+    padding-top: 5%;
+}
+
+.firstLineFour3{
+    padding-top: 10%;
+    width: 200%;
+    margin-left: -100%;
+}
+.secondLineOne1, .secondLineOne2{
+    padding-top: 20%;
+    width: 200%;
+}
+.secondLineThree1, .secondLineThree2{
+    padding-top: 25%;
+    width: 200%;
+    margin-left: -30%;
+}
+
+.secondLineTwo1, .secondLineTwo2{
+    padding-top: 25%;
+    width: 200%;
+    margin-left: -62%;
+}
+
+.secondLineFour1, .secondLineFour2{
+    width: 200%;
+    margin-left: -100%;
+    padding-top: 22%;
+}
+
+.firstLineFour1, .firstLineFour2{
+    padding-top: 30%;
+    margin-left: -5%;
+    width: 200%;
+}
+
+.firstLineThree1, .firstLineThree2{
+    padding-top: 35%;
+    width: 200%;
+    margin-left: -35%;
+}
+
+.firstLineTwo1, .firstLineTwo2{
+    padding-top: 35%;
+    width: 200%;
+    margin-left: -70%;
+}
+
+.firstLineOne1, .firstLineOne2{
+    padding-top: 30%;
+    width: 200%;
+    margin-left: -100%
+}
+
+.container2 img{
+    width: 20%;
+}
+
+.container3 img{
+    width: 20%;
+}
+
+.kittyGreyNormal{
+   padding-left: 40%;
+}
+.kittyBrownDown{
+    margin-left: -10%;
+    margin-top: 5%;
+}
+
+.kittyBrownLeft{
+    width: 90%;
+    padding-left: 38%;
+    padding-top: 25%;
+}
+
+.kittyGreyUp{
+    width: 30%;
+    padding-top: 30%;
+    padding-left: 4%;
+}
+
+.homePage, .gamePage{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.homePageContent{
+    padding-bottom: 20%;
+}
+
+.welcom{
+    font-size: xx-large;
+    margin-bottom: 5%;
+}
+
+.scroll{
+    margin-top: 3%;
+}
+
+.gamePage{
+    margin-top: 5%;
+}
+
+.gamePage h1{
+    margin-bottom: 2%;
+    font-size: xx-large;
+}
+
+.game{
+    border: 2px solid rgb(22, 51, 214);
+    width: 70rem;
+    height: 540px;
+    display: flex;
+}
+
+.gameInfo summary, .gameInfo p{
+    margin-top: 2%;
+    width: 70rem;
+    margin-left: 0.23%;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+summary{
+    font-size: xx-large;
+}
+
+.gaaame{
+    width: 70%;
+}
+
+.gameInfo p{
+    width: 70%;
+    font-size: large;
+}
+
+.containerQuestions{
+    padding-top: 20%;
+    display: grid;
+    justify-content: center;
+    margin: 0% 10%;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3%;
+    margin-bottom: 5%;
+}
+
+.upLeft2{
+    margin-top: -20%;
+}
+
+.question{
+    font-family: "Cherry";
+    margin-bottom: 5%;
+}
+
+.answer{
+    font-family: "Caviar";
+}
+
+.lastQuestion {
+    font-family: "Cherry";
+    margin-bottom: 1.5%;
+}
+
+.lastAnswer{
+    font-family: "Caviar";
+    margin: 0% 10%;
+}
+
+.presentation{
+    margin-top: -55%;
+}
+
+.whoWeAre1{
+    font-size: xx-large;
+    padding-bottom: 2%;
+    margin-top: 40%;
+}
+
+.weContainer{
+   width: 70%;
+   justify-content: center;
+    padding-left: 15%;
+}
+
+.block{
+    margin-top: -30%;
+}
+
+.we{
+    justify-content: center;
+    display: grid;
+    align-content: center;
+   width: 100%;
+   grid-template-columns: 25% 25% 25% 25%;
+}
+
+.we div h3{
+    font-family: "Cherry";
+    font-size: x-large;
+}
+
+.teamDR{
+    font-size: xx-large;
+    padding-bottom: 2%;
+}
+
+.elisabettaImg{
+    width: 80%;
+}
+.melanieImg{
+    width: 65%;
+}
+
+.marieImg{
+    width: 48.5%;
+}
+
+.nisrineImg{
+    width: 50%;
+}
+
+.veryLastQuestion{
+    margin-bottom: -3%;
+}
+
+/* footer{ 
+    margin-top: 10%;
+    clear: both;
+    font-size: xx-large;
+} */

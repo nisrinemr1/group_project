@@ -1,0 +1,22 @@
+/* The video that I found to make this animation : https://www.youtube.com/watch?v=tlnXVEY_ZYo&t=196s */
+
+.flex-c-col{
+    background: url("../images/sakura2.png");
+    height:100vh;
+    animation: animate-background linear alternate 15s infinite;  
+    /*https://www.w3schools.com/css/css3_animations.asp*/
+}
+
+@keyframes animate-background{
+    /* If I want to make it moves in the diagonal (top left to bottom right:  */
+    from {background-position: 0px 0px;}
+    to{background-position: 400px 500px;}
+}
+
+.logo-home{
+    text-align: center;
+    transform: scale(0.7);
+    margin-bottom: 0;
+    padding-top: 10%;
+}
+
